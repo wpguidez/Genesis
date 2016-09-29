@@ -1,0 +1,12 @@
+<?php
+//*Do not inculude the opening php tag
+/**-------------------------------------------
+* @link https://wpguidez.com
+* @author WPguidez Team
+-------------------------------------------------*/
+//* Modify the speak your mind text
+add_filter( 'genesis_comment_form_args', 'custom_comment_form_args' );
+function custom_comment_form_args($args) {
+$args['title_reply'] = 'Leave a Comment';
+return $args;
+}
