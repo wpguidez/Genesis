@@ -1,0 +1,12 @@
+<?php
+//* Do not include opening php tag
+/**-------------------------------------------
+* @link https://wpguidez.com
+* @author WPGuidez Team
+-------------------------------------------------*/
+//* Modify comments header text in comments
+add_filter( 'genesis_title_comments', 'custom_genesis_title_comments' );
+function custom_genesis_title_comments() {
+$title = '<h3>Leave a Reply</h3>';
+return $title;
+}
